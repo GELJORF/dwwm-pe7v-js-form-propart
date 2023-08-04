@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="_css/style.css">
     <link rel="stylesheet" href="_css/bootstrap.min.css">
-    <title>Document</title>
+    <title>First project JS</title>
     <script src="_js/misc.js"></script>
     <script src="_js/main.js"></script>
 </head>
 <body>
     <section>
         <div>
+            <h1>Formulaire Particulier</h1>
             <form class="col-lg-4">
                 <div class="mb-2">
                     <label for="nom" class="form-label">Nom</label>
@@ -22,7 +23,7 @@
                     <input type="text" class="form-control" id="prenom">
                 </div>
                 <div class="mb-2">
-                    <p>Genre</p>
+                    <p class="fw-bold">Genre : </p>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                         <label class="form-check-label" for="flexRadioDefault1">
@@ -41,14 +42,14 @@
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
                 <div>
-                    <p>L'adresse Postale</p>
+                    <p class="fw-bold">L'adresse Postale :</p>
                     <div class="mb-2">
                         <label for="adresse" class="form-label">Adresse</label>
                         <input type="text" class="form-control" id="adresse">
                     </div>
                     <div class="mb-2">
                         <label for="code-postal" class="form-label">Code Postale</label>
-                        <input type="number" class="form-control" id="code-postal">
+                        <input type="text" class="form-control" id="code-postal">
                     </div>
                     <div class="mb-2">
                         <label for="ville" class="form-label">Ville</label>
@@ -57,11 +58,11 @@
                 </div>
                 <div class="mb-2">
                     <label for="telfixe" class="form-label">Téléphone fixe</label>
-                    <input type="number" class="form-control" id="telfixe">
+                    <input type="text" class="form-control" id="telfixe">
                 </div>
                 <div class="mb-2">
                     <label for="telportable" class="form-label">Téléphone portable</label>
-                    <input type="number" class="form-control" id="telportable">
+                    <input type="text" class="form-control" id="telportable">
                 </div>
                 <div class="mb-2">
                     <label for="datenaiss" class="form-label">Date de naissance</label>
@@ -79,11 +80,12 @@
                         Accepter les communications commerciales
                     </label>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary mb-5 ps-4 pe-4">Envoyer</button>
               </form>
         </div>
     </section>
     <section>
+        <h1>Formulaire Professionnel</h1>
         <div class="col-lg-4">
             <div class="mb-2">
                 <label for="nom" class="form-label">Raison sociale</label>
@@ -99,24 +101,40 @@
             </div>
             <div class="mb-2">
                 <label for="telfixe" class="form-label">Numéro de téléphone de contact</label>
-                <input type="number" class="form-control" id="telfixe">
+                <input type="text" class="form-control" id="telfixe">
             </div>
             <div>
-                <p>L'adresse Postale</p>
+                <p class="fw-bold">L'adresse Postale :</p>
                 <div class="mb-2">
                     <label for="adresse" class="form-label">Adresse</label>
                     <input type="text" class="form-control" id="adresse">
                 </div>
                 <div class="mb-2">
                     <label for="code-postal" class="form-label">Code Postale</label>
-                    <input type="number" class="form-control" id="code-postal">
+                    <input type="text" class="form-control" id="code-postal">
                 </div>
                 <div class="mb-2">
                     <label for="ville" class="form-label">Ville</label>
                     <input type="text" class="form-control" id="ville">
                 </div>
             </div>
-            
+            <div class="mb-2">
+                <label for="tva" class="form-label">Numéro de TVA intracommunautaire (facultatif)</label>
+                <input type="text" class="form-control" id="tva">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="CGV">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Accepter les CGV
+                </label>
+            </div>
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="CC">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Accepter les communications commerciales
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary mb-5 ps-4 pe-4">Envoyer</button>
         </div>
     </section>
     
